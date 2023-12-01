@@ -57,7 +57,7 @@ def mutate(route):
             route[i], route[j] = route[j], route[i]
     return route
 
-# Function phát triển dân số quần thể 
+# Function phát triển dân số quần thể và chọn lọc tự nhiên 
 def evolve(population):
     graded = [(route_distance(route), route) for route in population]
     graded = sorted(graded, key=lambda x: x[0])
